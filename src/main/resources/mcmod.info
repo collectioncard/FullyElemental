@@ -1,16 +1,17 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
-  "version": "${version}",
-  "mcversion": "${mcversion}",
+  "modid": "fullyelemental",
+  "name": "Fully Elemental",
+  "description": "This mod allows me to add whatever I want to Minecraft",
+  "version": "",
+  "mcversion": "",
   "url": "",
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
+  "authorList": ["Thomas"],
+  "credits": "Pretty much just Thomas",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
+  
 }
 ]
