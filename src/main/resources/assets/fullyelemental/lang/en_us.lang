@@ -2,4 +2,14 @@ item.fullyelemental.RawBatWing.name=Raw Bat Wing
 item.fullyelemental.RawDonkeyMeat.name=Raw Donkey Meat
 item.fullyelemental.RawVillagerMeat.name=Raw Villager Meat
 item.fullyelemental.RawHorseMeat.name=Raw Horse Meat
+
+item.fullyelemental.CookedBatWing.name=Cooked Bat Wing
+item.fullyelemental.CookedDonkeyMeat.name=Cooked Donkey Meat
+item.fullyelemental.CookedVillagerMeat.name=Cooked Villager Meat
+item.fullyelemental.CookedHorseMeat.name=Cooked Horse Meat
+
+
+
+
+
 itemGroup.fullyelemental.tabFullyElemental=Fully Elemental

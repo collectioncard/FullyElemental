@@ -1,6 +1,7 @@
 package com.thomas.fullyelemental.util;
 
 
+import com.thomas.fullyelemental.init.FullyElementalBlocks;
 import com.thomas.fullyelemental.init.FullyElementalItems;
 
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -23,6 +24,13 @@ public class ModelRegistryHandler {
 		registerModel(FullyElementalItems.RawDonkeyMeat);
 		registerModel(FullyElementalItems.RawVillagerMeat);
 		registerModel(FullyElementalItems.RawHorseMeat);
+		registerModel(FullyElementalItems.CookedBatWing);
+		registerModel(FullyElementalItems.CookedDonkeyMeat);
+		registerModel(FullyElementalItems.CookedVillagerMeat);
+		registerModel(FullyElementalItems.CookedHorseMeat);
+		
+		registerModel(Item.getItemFromBlock(FullyElementalBlocks.Basic_Block));
+
 }
 
 	private static void registerModel(Item item) {

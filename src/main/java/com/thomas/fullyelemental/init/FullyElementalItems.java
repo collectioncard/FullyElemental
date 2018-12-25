@@ -8,12 +8,21 @@ import net.minecraftforge.fml.common.registry.GameRegistry.ObjectHolder;
 public class FullyElementalItems {
 	
 	 //public static final Item BASIC_ITEM = null;
-	 public static final Item rock = null;
+	 
+//food
+	//Raw food
+	public static final Item rock = null;
 	 public static final Item lol = null;
 	 public static final Item RawBatWing = null;
 	 public static final Item RawDonkeyMeat = null;
 	 public static final Item RawVillagerMeat = null;
 	 public static final Item RawHorseMeat = null;
+	 
+	 //Cooked food
+	 public static final Item CookedBatWing = null;
+	 public static final Item CookedDonkeyMeat = null;
+	 public static final Item CookedVillagerMeat = null;
+	 public static final Item CookedHorseMeat = null;
 	 
 
 }

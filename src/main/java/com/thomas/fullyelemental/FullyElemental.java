@@ -8,7 +8,7 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import org.apache.logging.log4j.Logger;
-
+import com.thomas.fullyelemental.Recipes.*;
 
 //Import proxies
 import com.thomas.fullyelemental.proxy.ServerProxy;
@@ -33,6 +33,7 @@ public class FullyElemental
     private static Logger logger;
     
     
+    
     //creative tab
     public static final CreativeTabs FULLY_ELEMENTAL_TAB = new FullyElementalTab("tabFullyElemental");
 
@@ -45,7 +46,9 @@ public class FullyElemental
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
-        // some example code
+        
+    	//Calls the method for smelting recipes
+    	Recipes.initSmelting();
         logger.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
     }
 }
