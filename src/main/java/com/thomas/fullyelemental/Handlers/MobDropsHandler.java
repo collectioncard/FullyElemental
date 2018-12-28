@@ -2,6 +2,7 @@ package com.thomas.fullyelemental.Handlers;
 
 import com.thomas.fullyelemental.init.FullyElementalItems;
 
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.passive.AbstractHorse;
 import net.minecraft.entity.passive.EntityBat;
@@ -27,11 +28,22 @@ public class MobDropsHandler {
 	@SubscribeEvent(priority=EventPriority.NORMAL, receiveCanceled=true)
 	public void onEvent(LivingDropsEvent event)
 	{
+		//Checks to see if an entity that died is an instance of a certain mob
 	    if (event.getEntity() instanceof EntityVillager)
 	    {
-	        ItemStack itemStackToDrop = new ItemStack(FullyElementalItems.RawTestificate, mobDropCalculator());
+	    	//checks to see if entity died while on fire
+	    	if (event.getEntity().isBurning()) {
+	    		ItemStack itemStackToDrop = new ItemStack(FullyElementalItems.CookedTestificate, mobDropCalculator());
+		        event.getDrops().add(new EntityItem(event.getEntity().world, event.getEntity().posX, 
+		              event.getEntity().posY, event.getEntity().posZ, itemStackToDrop));			
+	    	}
+	    	//if the previous if statement is wrong, run this
+	    	else {
+	    	ItemStack itemStackToDrop = new ItemStack(FullyElementalItems.RawTestificate, mobDropCalculator());
 	        event.getDrops().add(new EntityItem(event.getEntity().world, event.getEntity().posX, 
-	              event.getEntity().posY, event.getEntity().posZ, itemStackToDrop));
+	              event.getEntity().posY, event.getEntity().posZ, itemStackToDrop));	
+	    	}
+	        
 	    }
 	    else if (event.getEntity() instanceof EntityLlama) {
 	    	ItemStack itemStackToDrop = new ItemStack(FullyElementalItems.RawLlamaMeat, mobDropCalculator());
@@ -80,7 +92,7 @@ public class MobDropsHandler {
 	    }
 	}
 	
-	
+	//When called, this function returns a random number between 1 and 5
 	private static int mobDropCalculator(){
 		int drops, ran;
 		
