@@ -49,6 +49,8 @@ public class FullyElemental
         
     	//Calls the method for smelting recipes
     	Recipes.initSmelting();
+    	
+    	
         logger.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
     }
 }

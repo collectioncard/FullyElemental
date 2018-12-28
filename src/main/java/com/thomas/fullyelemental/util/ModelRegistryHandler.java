@@ -17,8 +17,9 @@ public class ModelRegistryHandler {
 
 	@SubscribeEvent
 	public static void registerModels(ModelRegistryEvent event) {
+		//items
 		//registerModel(FullyElementalItems.BASIC_ITEM);
-		registerModel(FullyElementalItems.rock);
+		registerModel(FullyElementalItems.TEST);
 		registerModel(FullyElementalItems.lol);
 		registerModel(FullyElementalItems.RawBatWing);
 		registerModel(FullyElementalItems.RawDonkeyMeat);
@@ -28,7 +29,22 @@ public class ModelRegistryHandler {
 		registerModel(FullyElementalItems.CookedDonkeyMeat);
 		registerModel(FullyElementalItems.CookedVillagerMeat);
 		registerModel(FullyElementalItems.CookedHorseMeat);
+		registerModel(FullyElementalItems.RawLlamaMeat);
+		registerModel(FullyElementalItems.RawMuleMeat);
+		registerModel(FullyElementalItems.RawCatMeat);
+		registerModel(FullyElementalItems.RawParrotMeat);
+		registerModel(FullyElementalItems.RawTestificate);
+		registerModel(FullyElementalItems.RawCalamari);
+		registerModel(FullyElementalItems.RawDogMeat);
+		registerModel(FullyElementalItems.CookedLlamaMeat);
+		registerModel(FullyElementalItems.CookedMuleMeat);
+		registerModel(FullyElementalItems.CookedCatMeat);
+		registerModel(FullyElementalItems.CookedParrotMeat);
+		registerModel(FullyElementalItems.CookedTestificate);
+		registerModel(FullyElementalItems.CookedCalamari);
+		registerModel(FullyElementalItems.CookedDogMeat);
 		
+		//Blocks
 		registerModel(Item.getItemFromBlock(FullyElementalBlocks.Basic_Block));
 
 }

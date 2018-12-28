@@ -1,6 +1,7 @@
 package com.thomas.fullyelemental.util;
 
 
+import com.thomas.fullyelemental.item.FoodBasic;
 import com.thomas.fullyelemental.item.ItemBasic;
 import com.thomas.fullyelemental.block.BlockBasic;
 import com.thomas.fullyelemental.init.FullyElementalBlocks;
@@ -36,7 +37,7 @@ public class RegistryHandler {
        //normal items
 		final Item[] items = {
                 //new ItemBasic("itemBasic", "basic_item"),
-                new ItemBasic("rock", "rock"),
+                new FoodBasic("TEST", 3, 0.3f, false),
                 new ItemBasic("lol", "lol"),
                 new ItemBasic("RawBatWing", "RawBatWing"),
                 new ItemBasic("RawDonkeyMeat", "RawDonkeyMeat"),
@@ -46,7 +47,20 @@ public class RegistryHandler {
                 new ItemBasic("CookedDonkeyMeat", "CookedDonkeyMeat"),
                 new ItemBasic("CookedVillagerMeat", "CookedVillagerMeat"),
                 new ItemBasic("RawHorseMeat", "RawHorseMeat"),
-                
+                new ItemBasic("RawLlamaMeat", "RawLlamaMeat"),
+                new ItemBasic("RawMuleMeat", "RawMuleMeat"),
+                new ItemBasic("RawCatMeat", "RawCatMeat"),
+                new ItemBasic("RawParrotMeat", "RawParrotMeat"),
+                new ItemBasic("RawTestificate", "RawTestificate"),
+                new ItemBasic("RawCalamari", "RawCalamari"),
+                new ItemBasic("RawDogMeat", "RawDogMeat"),
+                new ItemBasic("CookedLlamaMeat", "CookedLlamaMeat"),
+                new ItemBasic("CookedMuleMeat", "CookedMuleMeat"),
+                new ItemBasic("CookedCatMeat", "CookedCatMeat"),
+                new ItemBasic("CookedParrotMeat", "CookedParrotMeat"),
+                new ItemBasic("CookedTestificate", "CookedTestificate"),
+                new ItemBasic("CookedCalamari", "CookedCalamari"),
+                new ItemBasic("CookedDogMeat", "CookedDogMeat"),
         };
         //block items
         final Item[] itemBlocks = {

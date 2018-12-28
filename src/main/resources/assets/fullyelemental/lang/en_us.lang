@@ -9,6 +9,21 @@ item.fullyelemental.CookedVillagerMeat.name=Cooked Villager Meat
 item.fullyelemental.CookedHorseMeat.name=Cooked Horse Meat
 
 
+item.fullyelemental.RawLlamaMeat.name=Raw Llama Meat
+item.fullyelemental.RawMuleMeat.name=Raw Mule Meat
+item.fullyelemental.RawCatMeat.name=Raw Cat Meat
+item.fullyelemental.RawParrotMeat.name=Raw Parrot Meat
+item.fullyelemental.RawTestificate.name=Raw Testificate Meat
+item.fullyelemental.RawCalamari.name=Raw Calamari
+item.fullyelemental.RawDogMeat.name=Raw Dog Meat
+item.fullyelemental.CookedLlamaMeat.name=Cooked Llama Meat
+item.fullyelemental.CookedMuleMeat.name=Cooked Mule Meat
+item.fullyelemental.CookedCatMeat.name=Cooked Cat Meat
+item.fullyelemental.CookedParrotMeat.name=Cooked Parrot Meat
+item.fullyelemental.CookedTestificate.name=Cooked Testificate Meat
+item.fullyelemental.CookedCalamari.name=Cooked Calamari
+item.fullyelemental.CookedDogMeat.name=Cooked Dog Meat
+
 
 
 
