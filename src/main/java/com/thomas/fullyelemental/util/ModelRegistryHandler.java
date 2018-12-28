@@ -1,6 +1,7 @@
 package com.thomas.fullyelemental.util;
 
 
+import com.thomas.fullyelemental.FullyElemental;
 import com.thomas.fullyelemental.init.FullyElementalBlocks;
 import com.thomas.fullyelemental.init.FullyElementalItems;
 
@@ -52,4 +53,5 @@ public class ModelRegistryHandler {
 	private static void registerModel(Item item) {
 		ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(item.getRegistryName(), "inventory"));
 	}
+	
 }

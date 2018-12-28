@@ -1,13 +1,24 @@
 package com.thomas.fullyelemental;
 
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.item.EntityItem;
+import net.minecraft.entity.passive.EntitySheep;
 import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.entity.living.LivingDropsEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.eventhandler.EventPriority;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+
 import org.apache.logging.log4j.Logger;
+
+import com.thomas.fullyelemental.Handlers.MobDropsHandler;
 import com.thomas.fullyelemental.Recipes.*;
 
 //Import proxies
@@ -49,8 +60,14 @@ public class FullyElemental
         
     	//Calls the method for smelting recipes
     	Recipes.initSmelting();
-    	
+    	MinecraftForge.EVENT_BUS.register(new MobDropsHandler());
     	
         logger.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
     }
+    
+   
+	
+	
+    
+    
 }

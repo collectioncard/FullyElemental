@@ -1,28 +1,28 @@
-item.fullyelemental.RawBatWing.name=Raw Bat Wing
-item.fullyelemental.RawDonkeyMeat.name=Raw Donkey Meat
-item.fullyelemental.RawVillagerMeat.name=Raw Villager Meat
-item.fullyelemental.RawHorseMeat.name=Raw Horse Meat
+item.RawBatWing.name=Raw Bat Wing
+item.RawDonkeyMeat.name=Raw Donkey Meat
+item.RawVillagerMeat.name=Raw Villager Meat
+item.RawHorseMeat.name=Raw Horse Meat
 
-item.fullyelemental.CookedBatWing.name=Cooked Bat Wing
-item.fullyelemental.CookedDonkeyMeat.name=Cooked Donkey Meat
-item.fullyelemental.CookedVillagerMeat.name=Cooked Villager Meat
-item.fullyelemental.CookedHorseMeat.name=Cooked Horse Meat
+item.CookedBatWing.name=Cooked Bat Wing
+item.CookedDonkeyMeat.name=Cooked Donkey Meat
+item.CookedVillagerMeat.name=Cooked Villager Meat
+item.CookedHorseMeat.name=Cooked Horse Meat
 
 
-item.fullyelemental.RawLlamaMeat.name=Raw Llama Meat
-item.fullyelemental.RawMuleMeat.name=Raw Mule Meat
-item.fullyelemental.RawCatMeat.name=Raw Cat Meat
-item.fullyelemental.RawParrotMeat.name=Raw Parrot Meat
-item.fullyelemental.RawTestificate.name=Raw Testificate Meat
-item.fullyelemental.RawCalamari.name=Raw Calamari
-item.fullyelemental.RawDogMeat.name=Raw Dog Meat
-item.fullyelemental.CookedLlamaMeat.name=Cooked Llama Meat
-item.fullyelemental.CookedMuleMeat.name=Cooked Mule Meat
-item.fullyelemental.CookedCatMeat.name=Cooked Cat Meat
-item.fullyelemental.CookedParrotMeat.name=Cooked Parrot Meat
-item.fullyelemental.CookedTestificate.name=Cooked Testificate Meat
-item.fullyelemental.CookedCalamari.name=Cooked Calamari
-item.fullyelemental.CookedDogMeat.name=Cooked Dog Meat
+item.RawLlamaMeat.name=Raw Llama Meat
+item.RawMuleMeat.name=Raw Mule Meat
+item.RawCatMeat.name=Raw Cat Meat
+item.RawParrotMeat.name=Raw Parrot Meat
+item.RawTestificate.name=Raw Testificate Meat
+item.RawCalamari.name=Raw Calamari
+item.RawDogMeat.name=Raw Dog Meat
+item.CookedLlamaMeat.name=Cooked Llama Meat
+item.CookedMuleMeat.name=Cooked Mule Meat
+itemCookedCatMeat.name=Cooked Cat Meat
+item.CookedParrotMeat.name=Cooked Parrot Meat
+item.CookedTestificate.name=Cooked Testificate Meat
+item.CookedCalamari.name=Cooked Calamari
+item.CookedDogMeat.name=Cooked Dog Meat
 
 
 
