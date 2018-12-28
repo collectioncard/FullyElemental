@@ -12,6 +12,7 @@ public class Recipes {
 	
 	public static void initSmelting() {
 		//Cooking Food 
+		
 		GameRegistry.addSmelting(FullyElementalItems.RawBatWing, new ItemStack(FullyElementalItems.CookedBatWing), 10.0F);
 		GameRegistry.addSmelting(FullyElementalItems.RawDonkeyMeat, new ItemStack(FullyElementalItems.CookedDonkeyMeat), 10.0F);
 		GameRegistry.addSmelting(FullyElementalItems.RawVillagerMeat, new ItemStack(FullyElementalItems.CookedVillagerMeat), 10.0F);
