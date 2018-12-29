@@ -2,6 +2,7 @@ package com.thomas.fullyelemental.Handlers;
 
 import com.thomas.fullyelemental.init.FullyElementalItems;
 
+import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.item.EntityItem;
 import net.minecraft.entity.passive.AbstractHorse;
@@ -16,6 +17,7 @@ import net.minecraft.entity.passive.EntitySquid;
 import net.minecraft.entity.passive.EntityVillager;
 import net.minecraft.entity.passive.EntityWolf;
 import net.minecraft.init.Items;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.event.entity.living.LivingDropsEvent;
 import net.minecraftforge.fml.common.eventhandler.EventPriority;
@@ -31,65 +33,55 @@ public class MobDropsHandler {
 		//Checks to see if an entity that died is an instance of a certain mob
 	    if (event.getEntity() instanceof EntityVillager)
 	    {
-	    	//checks to see if entity died while on fire
-	    	if (event.getEntity().isBurning()) {
-	    		ItemStack itemStackToDrop = new ItemStack(FullyElementalItems.CookedTestificate, mobDropCalculator());
-		        event.getDrops().add(new EntityItem(event.getEntity().world, event.getEntity().posX, 
-		              event.getEntity().posY, event.getEntity().posZ, itemStackToDrop));			
-	    	}
-	    	//if the previous if statement is wrong, run this
-	    	else {
-	    	ItemStack itemStackToDrop = new ItemStack(FullyElementalItems.RawTestificate, mobDropCalculator());
-	        event.getDrops().add(new EntityItem(event.getEntity().world, event.getEntity().posX, 
-	              event.getEntity().posY, event.getEntity().posZ, itemStackToDrop));	
-	    	}
-	        
+	    	addDeathItem(FullyElementalItems.RawTestificate, FullyElementalItems.CookedTestificate,  event);
 	    }
 	    else if (event.getEntity() instanceof EntityLlama) {
-	    	ItemStack itemStackToDrop = new ItemStack(FullyElementalItems.RawLlamaMeat, mobDropCalculator());
-	        event.getDrops().add(new EntityItem(event.getEntity().world, event.getEntity().posX, 
-	              event.getEntity().posY, event.getEntity().posZ, itemStackToDrop));
+	    	addDeathItem(FullyElementalItems.RawLlamaMeat, FullyElementalItems.CookedLlamaMeat,      event);
 	    }
 	    else if (event.getEntity() instanceof EntityBat) {
-	    	ItemStack itemStackToDrop = new ItemStack(FullyElementalItems.RawBatWing, mobDropCalculator());
-	        event.getDrops().add(new EntityItem(event.getEntity().world, event.getEntity().posX, 
-	              event.getEntity().posY, event.getEntity().posZ, itemStackToDrop));
+	    	addDeathItem(FullyElementalItems.RawBatWing, FullyElementalItems.CookedBatWing,  event);
 	    }
 	    else if (event.getEntity() instanceof EntityMule) {
-	    	ItemStack itemStackToDrop = new ItemStack(FullyElementalItems.RawMuleMeat, mobDropCalculator());
-	        event.getDrops().add(new EntityItem(event.getEntity().world, event.getEntity().posX, 
-	              event.getEntity().posY, event.getEntity().posZ, itemStackToDrop));
+	    	addDeathItem(FullyElementalItems.RawMuleMeat, FullyElementalItems.CookedMuleMeat,  event);
 	    }
 	    else if (event.getEntity() instanceof EntityOcelot) {
-	    	ItemStack itemStackToDrop = new ItemStack(FullyElementalItems.RawCatMeat, mobDropCalculator());
-	        event.getDrops().add(new EntityItem(event.getEntity().world, event.getEntity().posX, 
-	              event.getEntity().posY, event.getEntity().posZ, itemStackToDrop));
+	    	addDeathItem(FullyElementalItems.RawCatMeat, FullyElementalItems.CookedCatMeat,  event);
 	    }
 	    else if (event.getEntity() instanceof EntityParrot) {
-	    	ItemStack itemStackToDrop = new ItemStack(FullyElementalItems.RawParrotMeat, mobDropCalculator());
-	        event.getDrops().add(new EntityItem(event.getEntity().world, event.getEntity().posX, 
-	              event.getEntity().posY, event.getEntity().posZ, itemStackToDrop));
+	    	addDeathItem(FullyElementalItems.RawParrotMeat, FullyElementalItems.CookedParrotMeat,  event);
 	    }
 	    else if (event.getEntity() instanceof EntitySquid) {
-	    	ItemStack itemStackToDrop = new ItemStack(FullyElementalItems.RawCalamari, mobDropCalculator());
-	        event.getDrops().add(new EntityItem(event.getEntity().world, event.getEntity().posX, 
-	              event.getEntity().posY, event.getEntity().posZ, itemStackToDrop));
+	    	addDeathItem(FullyElementalItems.RawCalamari, FullyElementalItems.CookedCalamari,  event);
 	    }
 	    else if (event.getEntity() instanceof EntityWolf) {
-	    	ItemStack itemStackToDrop = new ItemStack(FullyElementalItems.RawDogMeat, mobDropCalculator());
-	        event.getDrops().add(new EntityItem(event.getEntity().world, event.getEntity().posX, 
-	              event.getEntity().posY, event.getEntity().posZ, itemStackToDrop));
+	    	addDeathItem(FullyElementalItems.RawDogMeat, FullyElementalItems.CookedDogMeat,  event);
 	    }
 	    else if (event.getEntity() instanceof AbstractHorse ) {
-	    	ItemStack itemStackToDrop = new ItemStack(FullyElementalItems.RawHorseMeat, mobDropCalculator());
-	        event.getDrops().add(new EntityItem(event.getEntity().world, event.getEntity().posX, 
-	              event.getEntity().posY, event.getEntity().posZ, itemStackToDrop));
+	    	addDeathItem(FullyElementalItems.RawHorseMeat, FullyElementalItems.CookedHorseMeat,  event);
 	    }
 	    else if (event.getEntity() instanceof EntityDonkey) {
-	    	ItemStack itemStackToDrop = new ItemStack(FullyElementalItems.RawDonkeyMeat, mobDropCalculator());
+	    	addDeathItem(FullyElementalItems.RawDonkeyMeat, FullyElementalItems.CookedDonkeyMeat,  event);
+	    }
+	    
+	    
+	    
+	}
+	
+	
+	
+	//This handles the code for adding mob drops--- Call with addDeathItem(mod.item, event)
+	private void addDeathItem (Item ReferencedItemRaw,Item ReferencedItemCooked, LivingDropsEvent event) {
+		
+		if (event.getEntity().isBurning()){
+			ItemStack itemStackToDrop = new ItemStack(ReferencedItemCooked, mobDropCalculator());
 	        event.getDrops().add(new EntityItem(event.getEntity().world, event.getEntity().posX, 
 	              event.getEntity().posY, event.getEntity().posZ, itemStackToDrop));
-	    }
+		}
+		else {
+			ItemStack itemStackToDrop = new ItemStack(ReferencedItemRaw, mobDropCalculator());
+        event.getDrops().add(new EntityItem(event.getEntity().world, event.getEntity().posX, 
+              event.getEntity().posY, event.getEntity().posZ, itemStackToDrop));
+		}  
 	}
 	
 	//When called, this function returns a random number between 1 and 5
@@ -101,12 +93,11 @@ public class MobDropsHandler {
 		if (ran <= 0) {
 			ran = 1;
 		}
-		else {
-			
-		}
-		
 		drops = ran;
 		
 		return drops;
 	}
+	
+	
+	
 }
