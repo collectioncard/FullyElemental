@@ -24,6 +24,8 @@ public class Recipes {
 		GameRegistry.addSmelting(FullyElementalItems.RawTestificate, new ItemStack(FullyElementalItems.CookedTestificate), 10.0F);
 		GameRegistry.addSmelting(FullyElementalItems.RawCalamari, new ItemStack(FullyElementalItems.CookedCalamari), 10.0F);
 		GameRegistry.addSmelting(FullyElementalItems.RawDogMeat, new ItemStack(FullyElementalItems.CookedDogMeat), 10.0F);
+		GameRegistry.addSmelting(Items.STRING, new ItemStack(Items.STRING), 12000.0F);
+		
 
     }
 	
