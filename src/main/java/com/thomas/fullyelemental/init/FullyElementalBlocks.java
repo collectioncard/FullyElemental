@@ -7,5 +7,6 @@ import net.minecraftforge.fml.common.registry.GameRegistry.ObjectHolder;
 @ObjectHolder(FullyElemental.MODID)
 public class FullyElementalBlocks {
 
+	//This is the class that creates a block type object
 	public static final Block Basic_Block = null;
 }

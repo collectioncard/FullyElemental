@@ -9,13 +9,16 @@ import net.minecraftforge.fml.common.registry.GameRegistry.ObjectHolder;
 @ObjectHolder(FullyElemental.MODID)
 public class FullyElementalItems {
 	
-	 //public static final Item BASIC_ITEM = null;
+	 //This class creates item objects
 	 
 
 	
 	 public static final Item rock = null;
 	 public static final Item lol = null;
-//food	
+
+	 
+	 
+	 //food	
 	 //Raw food
 	 public static final Item RawBatWing = null;
 	 public static final Item RawDonkeyMeat = null;

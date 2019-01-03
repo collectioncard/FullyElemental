@@ -18,7 +18,7 @@ public class ModelRegistryHandler {
 
 	@SubscribeEvent
 	public static void registerModels(ModelRegistryEvent event) {
-		//items
+		//register items
 		//registerModel(FullyElementalItems.BASIC_ITEM);
 		registerModel(FullyElementalItems.TEST);
 		registerModel(FullyElementalItems.lol);
