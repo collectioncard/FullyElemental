@@ -20,7 +20,7 @@ import org.apache.logging.log4j.Logger;
 
 import com.thomas.fullyelemental.Handlers.MobDropsHandler;
 import com.thomas.fullyelemental.Recipes.*;
-
+import com.thomas.fullyelemental.mobs.MobRemover;
 //Import proxies
 import com.thomas.fullyelemental.proxy.ServerProxy;
 import com.thomas.fullyelemental.tabs.FullyElementalTab;
@@ -57,7 +57,7 @@ public class FullyElemental
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
-        
+    	MinecraftForge.EVENT_BUS.register(new MobRemover());
     	//Calls the method for smelting recipes
     	Recipes.initSmelting();
     	MinecraftForge.EVENT_BUS.register(new MobDropsHandler());
