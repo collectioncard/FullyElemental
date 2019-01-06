@@ -10,9 +10,6 @@ import net.minecraftforge.event.*;
 import net.minecraftforge.event.entity.EntityJoinWorldEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
-
-import org.apache.logging.log4j.Logger;
-
 public class MobRemover{
 	@SubscribeEvent
 	public void onEntitySpawn(EntityJoinWorldEvent event){
@@ -100,7 +97,6 @@ public class MobRemover{
 		if(event.getEntity() instanceof EntityZombie) {
 	    	event.setCanceled(true);
 	    	
-	    	logger.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
 		}
 		
 		if(event.getEntity() instanceof EntityIronGolem) {
