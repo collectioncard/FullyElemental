@@ -38,27 +38,32 @@ public class RegistryHandler {
 		final Item[] items = {
                 //new ItemBasic("itemBasic", "basic_item"),
                
-                
-                new FoodBasic("RawBatWing", 3, 0.3f, false),
-                new FoodBasic("RawDonkeyMeat", 3, 0.3f, false),
-                new FoodBasic("CookedHorseMeat", 3, 0.3f, false),
-                new FoodBasic("CookedBatWing", 3, 0.3f, false),
-                new FoodBasic("CookedDonkeyMeat", 3, 0.3f, false),
-                new FoodBasic("RawHorseMeat", 3, 0.3f, false),
-                new FoodBasic("RawLlamaMeat", 3, 0.3f, false),
-                new FoodBasic("RawMuleMeat", 3, 0.3f, false),
-                new FoodBasic("RawCatMeat", 3, 0.3f, false),
-                new FoodBasic("RawParrotMeat", 3, 0.3f, false),
-                new FoodBasic("RawTestificate", 3, 0.3f, false),
-                new FoodBasic("RawCalamari", 3, 0.3f, false),
-                new FoodBasic("RawDogMeat", 3, 0.3f, false),
-                new FoodBasic("CookedLlamaMeat", 3, 0.3f, false),
-                new FoodBasic("CookedMuleMeat", 3, 0.3f, false),
-                new FoodBasic("CookedCatMeat", 3, 0.3f, false),
-                new FoodBasic("CookedParrotMeat", 3, 0.3f, false),
-                new FoodBasic("CookedTestificate", 3, 0.3f, false),
-                new FoodBasic("CookedCalamari", 3, 0.3f, false),
-                new FoodBasic("CookedDogMeat", 3, 0.3f, false),
+				
+				
+				
+				// new FoodBasic("name",foodPoints, saturationInFloat, IsWolfMeat),
+				//Raw
+                new FoodBasic("RawHorseMeat", 3, 1.8f, true),
+                new FoodBasic("RawBatWing", 2, 0.6f, true),
+                new FoodBasic("RawDonkeyMeat", 3, 1.8f, true),
+                new FoodBasic("RawLlamaMeat", 3, 1.6f, true),
+                new FoodBasic("RawMuleMeat", 3, 1.6f, true),
+                new FoodBasic("RawCatMeat", 2, 0.9f, true),
+                new FoodBasic("RawParrotMeat", 2, 0.6f, true),
+                new FoodBasic("RawTestificate", 3, 1.8f, true),
+                new FoodBasic("RawCalamari", 2, 0.9f, true),
+                new FoodBasic("RawDogMeat", 2, 0.9f, true),
+                //Cooked
+                new FoodBasic("CookedHorseMeat", 8, 12.8f, true),
+                new FoodBasic("CookedBatWing", 4, 6f, true),
+                new FoodBasic("CookedDonkeyMeat", 8, 12.8f, true),
+                new FoodBasic("CookedLlamaMeat", 7, 12.6f, true),
+                new FoodBasic("CookedMuleMeat", 7, 12.6f, true),
+                new FoodBasic("CookedCatMeat", 5, 7f, true),
+                new FoodBasic("CookedParrotMeat", 4, 6f, true),
+                new FoodBasic("CookedTestificate", 8, 128f, true),
+                new FoodBasic("CookedCalamari", 5, 7f, true),
+                new FoodBasic("CookedDogMeat", 5, 7f, true),
                 
         };
         //block items
