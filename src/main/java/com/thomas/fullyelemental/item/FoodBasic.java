@@ -2,6 +2,7 @@ package com.thomas.fullyelemental.item;
 
 import com.thomas.fullyelemental.FullyElemental;
 
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemFood;
 
 public class FoodBasic extends ItemFood  {
@@ -12,6 +13,6 @@ public class FoodBasic extends ItemFood  {
 		super(amount, saturation, isWolfFood);
 		setUnlocalizedName(name);
 		setRegistryName(name);
-		setCreativeTab(FullyElemental.FULLY_ELEMENTAL_TAB);
+		setCreativeTab(CreativeTabs.FOOD);
 	}
 }
