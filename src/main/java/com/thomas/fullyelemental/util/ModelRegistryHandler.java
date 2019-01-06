@@ -20,15 +20,12 @@ public class ModelRegistryHandler {
 	public static void registerModels(ModelRegistryEvent event) {
 		//register items
 		//registerModel(FullyElementalItems.BASIC_ITEM);
-		registerModel(FullyElementalItems.TEST);
-		registerModel(FullyElementalItems.lol);
+		
 		registerModel(FullyElementalItems.RawBatWing);
 		registerModel(FullyElementalItems.RawDonkeyMeat);
-		registerModel(FullyElementalItems.RawVillagerMeat);
 		registerModel(FullyElementalItems.RawHorseMeat);
 		registerModel(FullyElementalItems.CookedBatWing);
 		registerModel(FullyElementalItems.CookedDonkeyMeat);
-		registerModel(FullyElementalItems.CookedVillagerMeat);
 		registerModel(FullyElementalItems.CookedHorseMeat);
 		registerModel(FullyElementalItems.RawLlamaMeat);
 		registerModel(FullyElementalItems.RawMuleMeat);

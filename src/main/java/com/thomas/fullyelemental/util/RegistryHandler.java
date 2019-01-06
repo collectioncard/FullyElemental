@@ -37,16 +37,13 @@ public class RegistryHandler {
        //normal items
 		final Item[] items = {
                 //new ItemBasic("itemBasic", "basic_item"),
-                new FoodBasic("TEST", 3, 0.3f, false),
-                new ItemBasic("lol", "lol"),
+               
                 
                 new FoodBasic("RawBatWing", 3, 0.3f, false),
                 new FoodBasic("RawDonkeyMeat", 3, 0.3f, false),
-                new FoodBasic("RawVillagerMeat", 3, 0.3f, false),
                 new FoodBasic("CookedHorseMeat", 3, 0.3f, false),
                 new FoodBasic("CookedBatWing", 3, 0.3f, false),
                 new FoodBasic("CookedDonkeyMeat", 3, 0.3f, false),
-                new FoodBasic("CookedVillagerMeat", 3, 0.3f, false),
                 new FoodBasic("RawHorseMeat", 3, 0.3f, false),
                 new FoodBasic("RawLlamaMeat", 3, 0.3f, false),
                 new FoodBasic("RawMuleMeat", 3, 0.3f, false),

@@ -62,7 +62,7 @@ public class FullyElemental
     	Recipes.initSmelting();
     	MinecraftForge.EVENT_BUS.register(new MobDropsHandler());
     	
-        logger.info("DIRT BLOCK >> {}", Blocks.DIRT.getRegistryName());
+        logger.info("I was made by someone who had no idea what he was doing!");
     }
     
    

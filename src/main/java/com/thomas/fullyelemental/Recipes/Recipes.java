@@ -15,7 +15,6 @@ public class Recipes {
 		//creates smelting recipe 
 		GameRegistry.addSmelting(FullyElementalItems.RawBatWing, new ItemStack(FullyElementalItems.CookedBatWing), 10.0F);
 		GameRegistry.addSmelting(FullyElementalItems.RawDonkeyMeat, new ItemStack(FullyElementalItems.CookedDonkeyMeat), 10.0F);
-		GameRegistry.addSmelting(FullyElementalItems.RawVillagerMeat, new ItemStack(FullyElementalItems.CookedVillagerMeat), 10.0F);
 		GameRegistry.addSmelting(FullyElementalItems.RawHorseMeat, new ItemStack(FullyElementalItems.CookedHorseMeat), 10.0F);
 		GameRegistry.addSmelting(FullyElementalItems.RawLlamaMeat, new ItemStack(FullyElementalItems.CookedLlamaMeat), 10.0F);
 		GameRegistry.addSmelting(FullyElementalItems.RawMuleMeat, new ItemStack(FullyElementalItems.CookedMuleMeat), 10.0F);

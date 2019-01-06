@@ -13,8 +13,7 @@ public class FullyElementalItems {
 	 
 
 	
-	 public static final Item rock = null;
-	 public static final Item lol = null;
+	 
 
 	 
 	 
@@ -22,7 +21,6 @@ public class FullyElementalItems {
 	 //Raw food
 	 public static final Item RawBatWing = null;
 	 public static final Item RawDonkeyMeat = null;
-	 public static final Item RawVillagerMeat = null;
 	 public static final Item RawHorseMeat = null;
 	 public static final Item RawLlamaMeat = null;
 	 public static final Item RawMuleMeat = null;
@@ -35,7 +33,6 @@ public class FullyElementalItems {
 	 //Cooked food
 	 public static final Item CookedBatWing = null;
 	 public static final Item CookedDonkeyMeat = null;
-	 public static final Item CookedVillagerMeat = null;
 	 public static final Item CookedHorseMeat = null;
 	 public static final Item CookedLlamaMeat = null;
 	 public static final Item CookedMuleMeat = null;
@@ -45,6 +42,6 @@ public class FullyElementalItems {
 	 public static final Item CookedCalamari = null;
 	 public static final Item CookedDogMeat = null;
 	 
-	 public static final Item TEST = null;
+	 
 
 }

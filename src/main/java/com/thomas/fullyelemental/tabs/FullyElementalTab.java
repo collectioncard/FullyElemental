@@ -17,6 +17,6 @@ public class FullyElementalTab extends CreativeTabs {
 	@SideOnly(Side.CLIENT)
 	@Override
 	public ItemStack getTabIconItem() {
-		return new ItemStack(FullyElementalItems.rock);
+		return new ItemStack(FullyElementalItems.RawTestificate);
 	}
 }
