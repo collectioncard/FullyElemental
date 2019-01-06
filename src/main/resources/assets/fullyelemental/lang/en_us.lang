@@ -1,31 +1,28 @@
+
+//FOOD
 item.RawBatWing.name=Raw Bat Wing
-item.RawDonkeyMeat.name=Raw Donkey Meat
-item.RawVillagerMeat.name=Raw Villager Meat
-item.RawHorseMeat.name=Raw Horse Meat
-
 item.CookedBatWing.name=Cooked Bat Wing
+item.RawDonkeyMeat.name=Raw Donkey Meat
 item.CookedDonkeyMeat.name=Cooked Donkey Meat
-item.CookedVillagerMeat.name=Cooked Villager Meat
+item.RawHorseMeat.name=Raw Horse Meat
 item.CookedHorseMeat.name=Cooked Horse Meat
-
-
 item.RawLlamaMeat.name=Raw Llama Meat
-item.RawMuleMeat.name=Raw Mule Meat
-item.RawCatMeat.name=Raw Cat Meat
-item.RawParrotMeat.name=Raw Parrot Meat
-item.RawTestificate.name=Raw Testificate Meat
-item.RawCalamari.name=Raw Calamari
-item.RawDogMeat.name=Raw Dog Meat
 item.CookedLlamaMeat.name=Cooked Llama Meat
+item.RawMuleMeat.name=Raw Mule Meat
 item.CookedMuleMeat.name=Cooked Mule Meat
+item.RawCatMeat.name=Raw Cat Meat
 itemCookedCatMeat.name=Cooked Cat Meat
+item.RawParrotMeat.name=Raw Parrot Meat
 item.CookedParrotMeat.name=Cooked Parrot Meat
+item.RawTestificate.name=Raw Testificate Meat
 item.CookedTestificate.name=Cooked Testificate Meat
+item.RawCalamari.name=Raw Calamari
 item.CookedCalamari.name=Cooked Calamari
+item.RawDogMeat.name=Raw Dog Meat
 item.CookedDogMeat.name=Cooked Dog Meat
 
-
-
-
+//Creative tab(s) (who knows, i might need more for this crazy thing)
 itemGroup.fullyelemental.tabFullyElemental=Fully Elemental
-tile.fullyelemental.blockBasic.name = KENNY SUCKS
+
+//blocks
+block.fullyelemental.blockBasic.name = KENNY SUCKS
