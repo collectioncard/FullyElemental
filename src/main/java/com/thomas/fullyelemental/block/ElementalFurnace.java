@@ -6,20 +6,17 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 
-public class BlockBasic extends Block {
+public class ElementalFurnace extends Block {
 
-	
-	
-	
 	//creates Blocks 
-	public BlockBasic(Material material, String unlocalizedName, String registryName) {
+	public ElementalFurnace(Material material, String unlocalizedName, String registryName) {
         this(material, SoundType.METAL, unlocalizedName, registryName);
 }
 
 	
 	
 	//this method is what is used to create blocks. Call it and pass the correct variables to make block
-	public BlockBasic(Material material, SoundType sound, String unlocalizedName, String registryName) {
+	public ElementalFurnace(Material material, SoundType sound, String unlocalizedName, String registryName) {
         super(material);
         setUnlocalizedName(FullyElemental.MODID + "." + unlocalizedName);
         setRegistryName(registryName);

@@ -4,6 +4,7 @@ package com.thomas.fullyelemental.util;
 import com.thomas.fullyelemental.item.FoodBasic;
 import com.thomas.fullyelemental.item.ItemBasic;
 import com.thomas.fullyelemental.block.BlockBasic;
+import com.thomas.fullyelemental.block.ElementalFurnace;
 import com.thomas.fullyelemental.init.FullyElementalBlocks;
 
 import net.minecraft.block.Block;
@@ -22,7 +23,7 @@ public class RegistryHandler {
 	public static void registerBlocks(Register<Block> event) {
 		final Block[] blocks = {
 				new BlockBasic(Material.ROCK, "blockBasic", "basic_block"),
-				new BlockBasic(Material.ROCK, "elementalfurnace", "elemental_furnace")
+				new ElementalFurnace(Material.ROCK, "elementalfurnace", "elemental_furnace")
 		};
 		event.getRegistry().registerAll(blocks);
 	}
