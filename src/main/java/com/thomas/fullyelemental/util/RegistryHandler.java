@@ -67,7 +67,7 @@ public class RegistryHandler {
                 new FoodBasic("CookedMuleMeat", 7, 12.6f, true),
                 new FoodBasic("CookedCatMeat", 5, 7f, true),
                 new FoodBasic("CookedParrotMeat", 4, 6f, true),
-                new FoodBasic("CookedTestificate", 8, 128f, true),
+                new FoodBasic("CookedTestificate", 8, 12.8f, true),
                 new FoodBasic("CookedCalamari", 5, 7f, true),
                 new FoodBasic("CookedDogMeat", 5, 7f, true),
                 
