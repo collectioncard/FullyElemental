@@ -21,7 +21,8 @@ public class RegistryHandler {
 	@SubscribeEvent
 	public static void registerBlocks(Register<Block> event) {
 		final Block[] blocks = {
-				new BlockBasic(Material.ROCK, "blockBasic", "basic_block")
+				new BlockBasic(Material.ROCK, "blockBasic", "basic_block"),
+				new BlockBasic(Material.ROCK, "elementalfurnace", "elemental_furnace")
 		};
 		event.getRegistry().registerAll(blocks);
 	}
@@ -68,7 +69,8 @@ public class RegistryHandler {
         };
         //block items
         final Item[] itemBlocks = {
-        		new ItemBlock(FullyElementalBlocks.Basic_Block).setRegistryName(FullyElementalBlocks.Basic_Block.getRegistryName())
+        		new ItemBlock(FullyElementalBlocks.Basic_Block).setRegistryName(FullyElementalBlocks.Basic_Block.getRegistryName()),
+        		new ItemBlock(FullyElementalBlocks.Elemental_Furnace).setRegistryName(FullyElementalBlocks.Elemental_Furnace.getRegistryName()),
         };
  
         event.getRegistry().registerAll(items);

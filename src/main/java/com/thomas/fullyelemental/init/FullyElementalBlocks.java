@@ -8,5 +8,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry.ObjectHolder;
 public class FullyElementalBlocks {
 
 	//This is the class that creates a block type object
+	//this is the first step in making a new block
 	public static final Block Basic_Block = null;
+	public static final Block Elemental_Furnace = null;
 }

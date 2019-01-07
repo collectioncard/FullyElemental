@@ -1,0 +1,10 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "model": "fullyelemental:elemental_furnace"
+    },
+    "variants": {
+        "normal": [{}],
+        "inventory": [{}]
+    }
+}
