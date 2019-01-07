@@ -11,4 +11,7 @@ public class FullyElementalBlocks {
 	//this is the first step in making a new block
 	public static final Block Basic_Block = null;
 	public static final Block Elemental_Furnace = null;
+	
+	//For @Copetan
+	public static final Block pedestal = null;
 }

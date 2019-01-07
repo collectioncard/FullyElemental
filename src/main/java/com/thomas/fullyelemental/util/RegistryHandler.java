@@ -5,6 +5,7 @@ import com.thomas.fullyelemental.item.FoodBasic;
 import com.thomas.fullyelemental.item.ItemBasic;
 import com.thomas.fullyelemental.block.BlockBasic;
 import com.thomas.fullyelemental.block.ElementalFurnace;
+import com.thomas.fullyelemental.block.Pedestal;
 import com.thomas.fullyelemental.init.FullyElementalBlocks;
 
 import net.minecraft.block.Block;
@@ -23,7 +24,10 @@ public class RegistryHandler {
 	public static void registerBlocks(Register<Block> event) {
 		final Block[] blocks = {
 				new BlockBasic(Material.ROCK, "blockBasic", "basic_block"),
-				new ElementalFurnace(Material.ROCK, "elementalfurnace", "elemental_furnace")
+				new ElementalFurnace(Material.ROCK, "elementalfurnace", "elemental_furnace"),
+				
+				//For @Copetan
+				new Pedestal(Material.ROCK, "pedestal", "pedestal")
 		};
 		event.getRegistry().registerAll(blocks);
 	}
@@ -72,6 +76,9 @@ public class RegistryHandler {
         final Item[] itemBlocks = {
         		new ItemBlock(FullyElementalBlocks.Basic_Block).setRegistryName(FullyElementalBlocks.Basic_Block.getRegistryName()),
         		new ItemBlock(FullyElementalBlocks.Elemental_Furnace).setRegistryName(FullyElementalBlocks.Elemental_Furnace.getRegistryName()),
+        		
+        		//For @Copetan
+        		new ItemBlock(FullyElementalBlocks.pedestal).setRegistryName(FullyElementalBlocks.pedestal.getRegistryName())
         };
  
         event.getRegistry().registerAll(items);

@@ -45,6 +45,10 @@ public class ModelRegistryHandler {
 		//Blocks
 		registerModel(Item.getItemFromBlock(FullyElementalBlocks.Basic_Block));
 		registerModel(Item.getItemFromBlock(FullyElementalBlocks.Elemental_Furnace));
+		
+		
+		//for @Copetan
+		registerModel(Item.getItemFromBlock(FullyElementalBlocks.pedestal));
 
 }
 
