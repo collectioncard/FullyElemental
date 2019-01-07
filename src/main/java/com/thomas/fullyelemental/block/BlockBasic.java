@@ -14,7 +14,7 @@ public class BlockBasic extends Block {
 	//creates Blocks 
 	//THIS NEEDS TO BE MOVED BECAUSE IT IS IN THE WRONG SPOT!
 	public BlockBasic(Material material, String unlocalizedName, String registryName) {
-        this(material, SoundType.STONE, unlocalizedName, registryName);
+        this(material, SoundType.METAL, unlocalizedName, registryName);
 }
 
 	
