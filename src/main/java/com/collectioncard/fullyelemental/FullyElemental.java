@@ -18,11 +18,11 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 import org.apache.logging.log4j.Logger;
 
-import com.collectioncard.fullyelemental.Handlers.MobDropsHandler;
-import com.collectioncard.fullyelemental.Recipes.*;
+import com.collectioncard.fullyelemental.handlers.MobDropsHandler;
 import com.collectioncard.fullyelemental.mobs.MobRemover;
 import com.collectioncard.fullyelemental.proxy.IProxy;
 import com.collectioncard.fullyelemental.proxy.ServerProxy;
+import com.collectioncard.fullyelemental.recipes.*;
 import com.collectioncard.fullyelemental.tabs.FullyElementalTab;
 
 @Mod(modid = FullyElemental.MODID, name = FullyElemental.NAME, version = FullyElemental.VERSION)

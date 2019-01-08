@@ -1,4 +1,4 @@
-package com.collectioncard.fullyelemental.Handlers;
+package com.collectioncard.fullyelemental.handlers;
 
 import com.collectioncard.fullyelemental.init.FullyElementalItems;
 

@@ -1,4 +1,4 @@
-package com.collectioncard.fullyelemental.Recipes;
+package com.collectioncard.fullyelemental.recipes;
 
 import com.collectioncard.fullyelemental.init.FullyElementalItems;
 
