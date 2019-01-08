@@ -25,4 +25,6 @@ item.CookedDogMeat.name=Cooked Dog Meat
 itemGroup.fullyelemental.tabFullyElemental=Fully Elemental
 
 //blocks
-block.fullyelemental.blockBasic.name = KENNY SUCKS
+tile.fullyelemental.blockBasic.name=A Basic Block
+tile.fullyelemental.pedestal.name=Pedestal
+tile.fullyelemental.elementalfurnace.name=Elemental Furnace
