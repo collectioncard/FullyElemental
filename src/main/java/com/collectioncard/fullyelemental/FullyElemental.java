@@ -33,8 +33,8 @@ public class FullyElemental
     public static final String VERSION = "1.0";
 
     //reference proxies
-    public static final String CLIENT = "com.thomas.fullyelemental.proxy.ClientProxy";
-    public static final String SERVER = "com.thomas.fullyelemental.proxy.ServerProxy";
+    public static final String CLIENT = "com.collectioncard.fullyelemental.proxy.ClientProxy";
+    public static final String SERVER = "com.collectioncard.fullyelemental.proxy.ServerProxy";
     
     @SidedProxy(clientSide = FullyElemental.CLIENT, serverSide = FullyElemental.SERVER)
     public static IProxy proxy;
