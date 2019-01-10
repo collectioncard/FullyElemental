@@ -24,6 +24,7 @@ import com.collectioncard.fullyelemental.proxy.IProxy;
 import com.collectioncard.fullyelemental.proxy.ServerProxy;
 import com.collectioncard.fullyelemental.recipes.*;
 import com.collectioncard.fullyelemental.tabs.FullyElementalTab;
+import com.collectioncard.fullyelemental.biomes.TestBiome;
 
 @Mod(modid = FullyElemental.MODID, name = FullyElemental.NAME, version = FullyElemental.VERSION)
 public class FullyElemental
@@ -60,6 +61,8 @@ public class FullyElemental
     	//Calls the method for smelting recipes
     	Recipes.initSmelting();
     	MinecraftForge.EVENT_BUS.register(new MobDropsHandler());
+    	TestBiome.load(event);
+    	
     	
         logger.info("I was made by someone who had no idea what he was doing!");
     }
